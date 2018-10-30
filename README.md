@@ -1,24 +1,35 @@
-# README
+# The Hacking Project - User Forms
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+## :mag: The content
+In these exercises, I had to work on the forms and establish a list of users registered in the database.
 
-* Ruby version
+The live version is available on Heroku here : https://mxrch-user-form.herokuapp.com/
 
-* System dependencies
+***This includes :***
+* Users,
+* Gossips,
+* Tags,
+* and private messages.
 
-* Configuration
+**After cloning the repository, make sure to do :**
+```sh
+$ cd thp_user-forms
+$ bundle install
+```
 
-* Database creation
+You can also generate random data in the database by doing :
+```sh
+$ rails db:seed
+```
 
-* Database initialization
+This will install all the dependencies needed for the exercises.
 
-* How to run the test suite
+## :european_post_office: The Strasbourgeois Crew
+Done in team with @OwwllMan, @zOmegad, @Runefire32 and @BrokenPirate. :heart:
 
-* Services (job queues, cache servers, search engines, etc.)
+<hr>
 
-* Deployment instructions
+***It's an exercise from the TheHackingProject bootcamp.***
 
-* ...
+***> www.thehackingproject.org***
