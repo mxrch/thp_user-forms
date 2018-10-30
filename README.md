@@ -6,11 +6,7 @@ In these exercises, I had to work on the forms and establish a list of users reg
 
 The live version is available on Heroku here : https://mxrch-user-form.herokuapp.com/
 
-***This includes :***
-* Users,
-* Gossips,
-* Tags,
-* and private messages.
+
 
 **After cloning the repository, make sure to do :**
 ```sh
