@@ -1,0 +1,2566 @@
+Started GET "/" for 127.0.0.1 at 2018-10-30 14:19:31 +0100
+  
+PG::ConnectionBad (FATAL:  la base de données « i-love-forms_development » n'existe pas
+):
+  
+pg (1.1.3) lib/pg.rb:56:in `initialize'
+pg (1.1.3) lib/pg.rb:56:in `new'
+pg (1.1.3) lib/pg.rb:56:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/lint.rb:49:in `_call'
+rack (2.0.5) lib/rack/lint.rb:37:in `call'
+rack (2.0.5) lib/rack/show_exceptions.rb:23:in `call'
+rack (2.0.5) lib/rack/common_logger.rb:33:in `call'
+shotgun (0.9.2) lib/shotgun/loader.rb:86:in `proceed_as_child'
+shotgun (0.9.2) lib/shotgun/loader.rb:31:in `call!'
+shotgun (0.9.2) lib/shotgun/loader.rb:18:in `call'
+shotgun (0.9.2) lib/shotgun/favicon.rb:12:in `call'
+shotgun (0.9.2) lib/shotgun/static.rb:14:in `call'
+rack (2.0.5) lib/rack/urlmap.rb:68:in `block in call'
+rack (2.0.5) lib/rack/urlmap.rb:53:in `each'
+rack (2.0.5) lib/rack/urlmap.rb:53:in `call'
+rack (2.0.5) lib/rack/builder.rb:153:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (1438.3ms)[0m  [1m[35mCREATE DATABASE "i-love-forms_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (850.1ms)[0m  [1m[35mCREATE DATABASE "i-love-forms_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (87.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (89.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5428523191829883285)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20181030123632)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (89.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "bio" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181030123632_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181030123632"]]
+  ↳ bin/rails:9
+  [1m[35m (9.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-30 13:29:25.498918"], ["updated_at", "2018-10-30 13:29:25.498918"]]
+  ↳ bin/rails:9
+  [1m[35m (11.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(5428523191829883285)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-10-30 14:29:30 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.5ms)
+Completed 200 OK in 48ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 14:42:07 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (5.1ms)
+Completed 200 OK in 31ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 14:44:14 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 3715ms (Views: 3684.9ms | ActiveRecord: 5.5ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (26.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Omegad"], ["email", "omegad@yahoo.fr"], ["bio", "Je m'appelle Simon je suis né à Strasbourg"], ["created_at", "2018-10-30 13:47:27.880122"], ["updated_at", "2018-10-30 13:47:27.880122"]]
+  [1m[35m (25.1ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users" for 127.0.0.1 at 2018-10-30 14:47:34 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (47.5ms)
+Completed 200 OK in 494ms (Views: 460.4ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 14:47:52 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2759.6ms)
+  Rendered users/new.html.erb within layouts/application (2763.1ms)
+Completed 200 OK in 3234ms (Views: 3184.1ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 14:49:15 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 521ms (Views: 484.2ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 14:49:19 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (148.3ms)
+  Rendered users/new.html.erb within layouts/application (150.6ms)
+Completed 200 OK in 604ms (Views: 552.7ms | ActiveRecord: 11.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-30 14:49:38 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O1XS2SU+asTEk+hFYMvc78zKXOvSFTw4TUqkgBJe85t45uXRuPhjFazQrC5AZPdr+zYkSIgWiRgy2sAoAyJS2w==", "user"=>{"username"=>"Thomas", "email"=>"tnqkjlgeq@yahoo.com", "bio"=>"pupupupute"}, "commit"=>"Create User"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Thomas"], ["email", "tnqkjlgeq@yahoo.com"], ["bio", "pupupupute"], ["created_at", "2018-10-30 13:49:39.035909"], ["updated_at", "2018-10-30 13:49:39.035909"]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (14.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+Redirected to http://localhost:4567/users/2
+Completed 302 Found in 75ms (ActiveRecord: 27.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-10-30 14:49:40 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 484ms (Views: 425.3ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 14:49:47 +0100
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 494ms (Views: 458.9ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 14:49:59 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.5ms)
+Completed 200 OK in 28ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:09:42 +0100
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 501ms (Views: 465.8ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:10:25 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 471ms (Views: 436.0ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:10:45 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 477ms (Views: 442.1ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:12:02 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (34.6ms)
+Completed 200 OK in 468ms (Views: 432.9ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:12:18 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 477ms (Views: 440.6ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:12:43 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 493ms (Views: 457.3ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:26:51 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 559ms (Views: 523.6ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:27:42 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:13
+  Rendered users/index.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 475ms (Views: 440.6ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:29:33 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:13
+  Rendered users/index.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 479ms (Views: 445.4ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:30:08 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:13
+  Rendered users/index.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 485ms (Views: 450.5ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:30:48 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 485ms (Views: 450.2ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:32:57 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 483ms (Views: 448.7ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:36:54 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 497ms (Views: 461.0ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:38:11 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 529ms (Views: 492.1ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:38:24 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 541ms (Views: 502.2ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/new_user_path" for 127.0.0.1 at 2018-10-30 15:38:40 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/new_user_path"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/lint.rb:49:in `_call'
+rack (2.0.5) lib/rack/lint.rb:37:in `call'
+rack (2.0.5) lib/rack/show_exceptions.rb:23:in `call'
+rack (2.0.5) lib/rack/common_logger.rb:33:in `call'
+shotgun (0.9.2) lib/shotgun/loader.rb:86:in `proceed_as_child'
+shotgun (0.9.2) lib/shotgun/loader.rb:31:in `call!'
+shotgun (0.9.2) lib/shotgun/loader.rb:18:in `call'
+shotgun (0.9.2) lib/shotgun/favicon.rb:12:in `call'
+shotgun (0.9.2) lib/shotgun/static.rb:14:in `call'
+rack (2.0.5) lib/rack/urlmap.rb:68:in `block in call'
+rack (2.0.5) lib/rack/urlmap.rb:53:in `each'
+rack (2.0.5) lib/rack/urlmap.rb:53:in `call'
+rack (2.0.5) lib/rack/builder.rb:153:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:38:46 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 469ms (Views: 437.2ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:39:58 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 489ms (Views: 454.9ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:40:06 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 694ms (Views: 653.4ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 15:40:29 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (260.9ms)
+  Rendered users/new.html.erb within layouts/application (277.6ms)
+Completed 200 OK in 734ms (Views: 682.4ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:41:24 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 486ms (Views: 451.2ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:43:29 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 574ms (Views: 541.0ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:46:03 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:21
+  Rendered users/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 558ms (Views: 522.4ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:47:08 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 457ms (Views: 423.8ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:53:46 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/index.html.erb:30: syntax error, unexpected tLABEL, expecting '='
+...t_buffer.append=( user, method: :delete, data: { confirm: 'A...
+...                        ^~~~~~~):
+  
+app/views/users/index.html.erb:30: syntax error, unexpected tLABEL, expecting '='
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:54:29 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (38.3ms)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 11.8ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users"}, missing required keys: [:id]):
+    26:           <td><%= user.email %></td>
+    27:           <td><%= user.bio %></td>
+    28:           <a class="btn btn-success" style="color: #f1f1f1" href=<%= user %> role="button">Voir</a>
+    29:           <a class="btn btn-success" style="color: #f1f1f1" href=<%= edit_user_path %> role="button">Modifier</a>
+    30:           <td><%= link_to 'Supprimer', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    31:         </tr>
+    32:       <% end %>
+  
+app/views/users/index.html.erb:29:in `block in _app_views_users_index_html_erb___3298990358589623897_69884875825480'
+app/views/users/index.html.erb:22:in `_app_views_users_index_html_erb___3298990358589623897_69884875825480'
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:55:36 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 506ms (Views: 472.0ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:56:36 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 493ms (Views: 457.5ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:57:00 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.1ms)
+Completed 200 OK in 477ms (Views: 442.6ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 15:59:38 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 477ms (Views: 443.9ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:01:36 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (37.5ms)
+Completed 200 OK in 478ms (Views: 445.0ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:03:28 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 485ms (Views: 450.5ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:04:52 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 480ms (Views: 446.3ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:07:17 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (37.1ms)
+Completed 200 OK in 601ms (Views: 564.6ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:08:19 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/index.html.erb:30: syntax error, unexpected keyword_class, expecting ')'
+...onfirm: 'Are you sure?' } class="tr-action" );@output_buffer...
+...                          ^~~~~):
+  
+app/views/users/index.html.erb:30: syntax error, unexpected keyword_class, expecting ')'
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:08:53 +0100
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/index.html.erb:30: syntax error, unexpected '='
+...firm: 'Are you sure?' }, class="tr-action" );@output_buffer....
+...                              ^):
+  
+app/views/users/index.html.erb:30: syntax error, unexpected '='
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:09:36 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 480ms (Views: 444.0ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:11:18 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (49.7ms)
+Completed 200 OK in 631ms (Views: 574.4ms | ActiveRecord: 20.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:11:43 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 665ms (Views: 628.0ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:13:10 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (38.3ms)
+Completed 200 OK in 558ms (Views: 522.6ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:13:42 +0100
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 496ms (Views: 462.6ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:14:54 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 480ms (Views: 444.7ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:18:43 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 572ms (Views: 537.4ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:19:10 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 559ms (Views: 524.4ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:20:09 +0100
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 561ms (Views: 525.7ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:20:38 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 561ms (Views: 527.1ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:21:23 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (38.5ms)
+Completed 200 OK in 563ms (Views: 527.5ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:22:26 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.2ms)
+Completed 200 OK in 567ms (Views: 532.9ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:22:51 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 571ms (Views: 535.7ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:23:47 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 575ms (Views: 539.3ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:24:11 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 565ms (Views: 527.6ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:24:40 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 568ms (Views: 534.0ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:25:05 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 562ms (Views: 525.8ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:27:11 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (34.6ms)
+Completed 200 OK in 563ms (Views: 529.5ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:28:34 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (34.6ms)
+Completed 200 OK in 564ms (Views: 530.0ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:31:02 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 560ms (Views: 526.4ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2018-10-30 16:31:40 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (150.5ms)
+  Rendered users/edit.html.erb within layouts/application (154.1ms)
+Completed 200 OK in 650ms (Views: 575.5ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:31:48 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 508ms (Views: 472.7ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:47:32 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 563ms (Views: 528.8ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:48:33 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.2ms)
+Completed 200 OK in 566ms (Views: 530.2ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:48:54 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 566ms (Views: 532.3ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:49:20 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 638ms (Views: 603.0ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:50:15 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 563ms (Views: 529.9ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:51:31 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 571ms (Views: 531.7ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 16:51:51 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (164.4ms)
+  Rendered users/new.html.erb within layouts/application (168.3ms)
+Completed 200 OK in 669ms (Views: 614.6ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:52:03 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (37.5ms)
+Completed 200 OK in 498ms (Views: 458.2ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:52:08 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 505ms (Views: 470.0ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:52:21 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 584ms (Views: 548.1ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:52:34 +0100
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 584ms (Views: 543.4ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:54:30 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.2ms)
+Completed 200 OK in 573ms (Views: 538.9ms | ActiveRecord: 12.5ms)
+
+
+Started DELETE "/users/2" for 127.0.0.1 at 2018-10-30 16:55:16 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"f2i5k9o6HvVFN2BFfT3Y+CJQT7xokdMSs37vL75U3ohqFsikkkSCoMx8ehpFuKCCTY/QIDSCbJrx4NRny+ziJQ==", "id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:57
+  [1m[36mUser Destroy (1.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/users_controller.rb:57
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:57
+Redirected to http://localhost:4567/users
+Completed 302 Found in 68ms (ActiveRecord: 20.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 16:55:18 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (37.6ms)
+Completed 200 OK in 471ms (Views: 435.7ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 16:55:23 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (165.0ms)
+  Rendered users/new.html.erb within layouts/application (167.7ms)
+Completed 200 OK in 658ms (Views: 610.2ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 16:56:09 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (151.1ms)
+  Rendered users/new.html.erb within layouts/application (154.8ms)
+Completed 200 OK in 610ms (Views: 558.0ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 17:24:37 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (6.3ms)
+Completed 200 OK in 53ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 17:24:39 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.1ms)
+Completed 200 OK in 27ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 17:24:50 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (161.3ms)
+  Rendered users/new.html.erb within layouts/application (163.7ms)
+Completed 200 OK in 618ms (Views: 567.6ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 17:24:55 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 493ms (Views: 457.9ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 17:27:12 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.5ms)
+Completed 200 OK in 29ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 17:27:14 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 27ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2018-10-30 17:27:33 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 498ms (Views: 463.4ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 18:00:53 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (147.5ms)
+  Rendered users/new.html.erb within layouts/application (149.9ms)
+Completed 200 OK in 609ms (Views: 555.3ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 18:19:23 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (135.7ms)
+  Rendered users/new.html.erb within layouts/application (138.0ms)
+Completed 200 OK in 564ms (Views: 512.1ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 18:30:14 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (136.1ms)
+  Rendered users/new.html.erb within layouts/application (138.4ms)
+Completed 200 OK in 570ms (Views: 518.8ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 18:50:44 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (152.3ms)
+  Rendered users/new.html.erb within layouts/application (155.7ms)
+Completed 200 OK in 1100ms (Views: 1045.9ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 18:55:06 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (211.6ms)
+  Rendered users/new.html.erb within layouts/application (214.5ms)
+Completed 200 OK in 683ms (Views: 629.9ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 18:55:26 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (145.8ms)
+  Rendered users/new.html.erb within layouts/application (148.3ms)
+Completed 200 OK in 609ms (Views: 558.2ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 18:57:23 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (186.1ms)
+  Rendered users/new.html.erb within layouts/application (189.8ms)
+Completed 200 OK in 659ms (Views: 607.4ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 18:58:38 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (209.6ms)
+  Rendered users/new.html.erb within layouts/application (212.9ms)
+Completed 200 OK in 680ms (Views: 625.0ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 18:58:51 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (217.0ms)
+  Rendered users/new.html.erb within layouts/application (220.0ms)
+Completed 200 OK in 690ms (Views: 635.0ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 19:01:57 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (217.8ms)
+  Rendered users/new.html.erb within layouts/application (220.4ms)
+Completed 200 OK in 710ms (Views: 656.6ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 19:03:54 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (213.6ms)
+  Rendered users/new.html.erb within layouts/application (216.5ms)
+Completed 200 OK in 681ms (Views: 627.7ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 19:04:16 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (209.7ms)
+  Rendered users/new.html.erb within layouts/application (212.7ms)
+Completed 200 OK in 686ms (Views: 629.0ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 19:06:10 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (196.8ms)
+  Rendered users/new.html.erb within layouts/application (199.8ms)
+Completed 200 OK in 645ms (Views: 591.7ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 19:07:20 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (199.9ms)
+  Rendered users/new.html.erb within layouts/application (202.9ms)
+Completed 200 OK in 652ms (Views: 598.3ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 19:07:30 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (134.6ms)
+  Rendered users/new.html.erb within layouts/application (137.3ms)
+Completed 200 OK in 575ms (Views: 525.2ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 19:09:26 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (138.1ms)
+  Rendered users/new.html.erb within layouts/application (140.5ms)
+Completed 200 OK in 673ms (Views: 620.2ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 19:09:52 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (136.6ms)
+  Rendered users/new.html.erb within layouts/application (139.1ms)
+Completed 200 OK in 681ms (Views: 627.4ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 19:11:16 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (123.2ms)
+  Rendered users/new.html.erb within layouts/application (126.3ms)
+Completed 200 OK in 681ms (Views: 620.3ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 19:12:18 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (156.3ms)
+  Rendered users/new.html.erb within layouts/application (158.9ms)
+Completed 200 OK in 695ms (Views: 644.6ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 19:13:03 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (135.4ms)
+  Rendered users/new.html.erb within layouts/application (137.8ms)
+Completed 200 OK in 578ms (Views: 526.1ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 19:13:17 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (135.7ms)
+  Rendered users/new.html.erb within layouts/application (137.9ms)
+Completed 200 OK in 592ms (Views: 541.1ms | ActiveRecord: 11.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-30 19:13:49 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mECfcfb5vIHA1sIAabtq3oYu9v7y79d7z2Ua5VXk+q2NPu5Gvocg1Emd2F9RPhKk6fFpYq78aPON+yGtIFzGAA==", "user"=>{"username"=>"Simon", "email"=>"bip@bip.fr", "bio"=>"biiiipbipbipbip"}, "commit"=>"Ajouter l'utilisateur"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Simon"], ["email", "bip@bip.fr"], ["bio", "biiiipbipbipbip"], ["created_at", "2018-10-30 18:13:49.677150"], ["updated_at", "2018-10-30 18:13:49.677150"]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (19.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+Redirected to http://localhost:4567/users/3
+Completed 302 Found in 79ms (ActiveRecord: 32.2ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2018-10-30 19:13:51 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 481ms (Views: 421.1ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 19:14:42 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (197.5ms)
+  Rendered users/new.html.erb within layouts/application (200.1ms)
+Completed 200 OK in 644ms (Views: 592.8ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 19:15:37 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (135.0ms)
+  Rendered users/new.html.erb within layouts/application (137.2ms)
+Completed 200 OK in 676ms (Views: 626.4ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 19:15:53 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (136.2ms)
+  Rendered users/new.html.erb within layouts/application (138.8ms)
+Completed 200 OK in 685ms (Views: 634.6ms | ActiveRecord: 11.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-30 19:27:36 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P4sUAY13Xtx7zr71b9I8s07lKhnPAHT+MN1OekEo8hgq9WU2xQnCifKFpKpXV0TJITq1hZMTy3ZyQ3UyNJDOtQ==", "user"=>{"username"=>"Ugo", "email"=>"ugo@ugo.ugo", "bio"=>"Le meilleur (il 'ma forcé)"}, "commit"=>"Ajouter l'utilisateur"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Ugo"], ["email", "ugo@ugo.ugo"], ["bio", "Le meilleur (il 'ma forcé)"], ["created_at", "2018-10-30 18:27:37.205612"], ["updated_at", "2018-10-30 18:27:37.205612"]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (11.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+Redirected to http://localhost:4567/users/4
+Completed 302 Found in 71ms (ActiveRecord: 24.7ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2018-10-30 19:27:38 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 517ms (Views: 459.3ms | ActiveRecord: 12.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-30 19:29:16 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P4sUAY13Xtx7zr71b9I8s07lKhnPAHT+MN1OekEo8hgq9WU2xQnCifKFpKpXV0TJITq1hZMTy3ZyQ3UyNJDOtQ==", "user"=>{"username"=>"Ugo clone", "email"=>"ugo@ugo.ugo", "bio"=>"Le meilleur (il 'ma forcé)"}, "commit"=>"Ajouter l'utilisateur"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Ugo clone"], ["email", "ugo@ugo.ugo"], ["bio", "Le meilleur (il 'ma forcé)"], ["created_at", "2018-10-30 18:29:16.835239"], ["updated_at", "2018-10-30 18:29:16.835239"]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+Redirected to http://localhost:4567/users
+Completed 302 Found in 73ms (ActiveRecord: 28.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 19:29:18 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 475ms (Views: 440.8ms | ActiveRecord: 12.0ms)
+
+
+Started DELETE "/users/5" for 127.0.0.1 at 2018-10-30 19:30:52 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+Hnn/qxRVx/1bHtnemWSmwwveu6/DmdQxY9RueXSIZPtB5bJ5C/LSnwnYThC4OrhY/DlcuMd2NiHEWrxkGodPg==", "id"=>"5"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  [1m[35m (3.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:57
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/users_controller.rb:57
+  [1m[35m (25.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:57
+Redirected to http://localhost:4567/users
+Completed 302 Found in 99ms (ActiveRecord: 43.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 19:30:54 +0100
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (54.6ms)
+Completed 200 OK in 593ms (Views: 550.9ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 19:31:50 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (43.3ms)
+Completed 200 OK in 523ms (Views: 488.9ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-10-30 19:32:07 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 543ms (Views: 482.7ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-10-30 19:32:19 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 577ms (Views: 515.0ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2018-10-30 19:32:30 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (208.9ms)
+  Rendered users/edit.html.erb within layouts/application (212.0ms)
+Completed 200 OK in 682ms (Views: 623.6ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/users/3/edit" for 127.0.0.1 at 2018-10-30 19:33:20 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (209.2ms)
+  Rendered users/edit.html.erb within layouts/application (211.5ms)
+Completed 200 OK in 691ms (Views: 627.9ms | ActiveRecord: 12.4ms)
+
+
+Started PATCH "/users/3" for 127.0.0.1 at 2018-10-30 19:33:48 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I0bL1/1xLHIM0ypXbTVSAcXoCGjR+scqLbXphGZIMIl2ePqtA9njiYtm+tdmHM0ZFZ7c3bK+AWn2PEspI/vwZw==", "user"=>{"username"=>"Pute", "email"=>"bip@bip.fr", "bio"=>"biiiipbipbipbip"}, "commit"=>"Ajouter l'utilisateur", "id"=>"3"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:44
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "username" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["username", "Pute"], ["updated_at", "2018-10-30 18:33:49.189686"], ["id", 3]]
+  ↳ app/controllers/users_controller.rb:44
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:44
+Redirected to http://localhost:4567/users
+Completed 302 Found in 79ms (ActiveRecord: 23.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 19:33:50 +0100
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 519ms (Views: 485.1ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-10-30 19:34:24 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 554ms (Views: 492.8ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-10-30 19:37:38 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 508ms (Views: 449.5ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-10-30 19:38:08 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 474ms (Views: 415.2ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 19:38:53 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 498ms (Views: 459.8ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 19:39:20 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (6.2ms)
+Completed 200 OK in 61ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 19:39:22 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.6ms)
+Completed 200 OK in 28ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 19:51:58 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (uninitialized constant IndexController):
+  
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `block in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:74:in `rescue in load_missing_constant'
+bootsnap (1.3.2) lib/bootsnap/load_path_cache/core_ext/active_support.rb:56:in `load_missing_constant'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+rack (2.0.5) lib/rack/lint.rb:49:in `_call'
+rack (2.0.5) lib/rack/lint.rb:37:in `call'
+rack (2.0.5) lib/rack/show_exceptions.rb:23:in `call'
+rack (2.0.5) lib/rack/common_logger.rb:33:in `call'
+shotgun (0.9.2) lib/shotgun/loader.rb:86:in `proceed_as_child'
+shotgun (0.9.2) lib/shotgun/loader.rb:31:in `call!'
+shotgun (0.9.2) lib/shotgun/loader.rb:18:in `call'
+shotgun (0.9.2) lib/shotgun/favicon.rb:12:in `call'
+shotgun (0.9.2) lib/shotgun/static.rb:14:in `call'
+rack (2.0.5) lib/rack/urlmap.rb:68:in `block in call'
+rack (2.0.5) lib/rack/urlmap.rb:53:in `each'
+rack (2.0.5) lib/rack/urlmap.rb:53:in `call'
+rack (2.0.5) lib/rack/builder.rb:153:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-10-30 19:53:33 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 668ms (Views: 647.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 19:53:54 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 573ms (Views: 534.2ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 19:54:00 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 478ms (Views: 458.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 19:54:04 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (146.9ms)
+  Rendered users/new.html.erb within layouts/application (150.0ms)
+Completed 200 OK in 630ms (Views: 576.0ms | ActiveRecord: 11.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-30 19:54:21 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6g/fhbReCc+m/8ALa5bGa4sTUmPKNiPhBS833LxOMYl5TjSjiGEJqGld2gJc++hy7QGi0ahOnMI3mzrkRPGCNw==", "user"=>{"username"=>"Thomas G", "email"=>"salut@eqf.fr", "bio"=>"ygneqkjgeqg"}, "commit"=>"Ajouter l'utilisateur"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Thomas G"], ["email", "salut@eqf.fr"], ["bio", "ygneqkjgeqg"], ["created_at", "2018-10-30 18:54:21.934984"], ["updated_at", "2018-10-30 18:54:21.934984"]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (16.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+Redirected to http://localhost:4567/users
+Completed 302 Found in 76ms (ActiveRecord: 30.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 19:54:23 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.2ms)
+Completed 200 OK in 480ms (Views: 446.1ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 19:54:35 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 462ms (Views: 442.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 19:56:12 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 481ms (Views: 460.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 19:58:27 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 447ms (Views: 428.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 19:58:46 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 531ms (Views: 512.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:00:46 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 525ms (Views: 505.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 20:03:57 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 527ms (Views: 491.6ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 20:04:51 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 608ms (Views: 571.7ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 20:05:30 +0100
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (41.3ms)
+Completed 200 OK in 471ms (Views: 435.9ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 20:06:05 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 604ms (Views: 570.2ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 20:07:16 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 492ms (Views: 457.5ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:07:30 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 466ms (Views: 447.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 20:07:40 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (143.0ms)
+  Rendered users/new.html.erb within layouts/application (146.2ms)
+Completed 200 OK in 634ms (Views: 581.3ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 20:08:01 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (196.0ms)
+  Rendered users/new.html.erb within layouts/application (198.9ms)
+Completed 200 OK in 658ms (Views: 603.8ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 20:10:09 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.2ms)
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 10.9ms)
+
+
+  
+SyntaxError (/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:16: syntax error, unexpected ')'
+...tilisateur", color: "#f1f1f1">);@output_buffer.safe_append='
+...                              ^
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+          ^~~
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:33: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/users/_form.html.erb:16: syntax error, unexpected ')'
+app/views/users/_form.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/_form.html.erb:33: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/users/_form.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/new.html.erb:5:in `_app_views_users_new_html_erb__785666553355512911_69884870363680'
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 20:11:31 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.7ms)
+  Rendered users/new.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 12.0ms)
+
+
+  
+SyntaxError (/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:16: syntax error, unexpected keyword_class, expecting ')'
+...bel: "Nom d'utilisateur"  class: "user_label">);@output_buff...
+...                          ^~~~~
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:16: syntax error, unexpected ')'
+...isateur"  class: "user_label">);@output_buffer.safe_append='
+...                              ^
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+          ^~~
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:33: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/users/_form.html.erb:16: syntax error, unexpected keyword_class, expecting ')'
+app/views/users/_form.html.erb:16: syntax error, unexpected ')'
+app/views/users/_form.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/_form.html.erb:33: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/users/_form.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/new.html.erb:5:in `_app_views_users_new_html_erb__785666553355512911_69884784840600'
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 20:12:44 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.7ms)
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 10.7ms)
+
+
+  
+SyntaxError (/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+...Nom d'utilisateur"  label_class: "user_label">);@output_buff...
+...                    ^~~~~~~~~~~
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:16: syntax error, unexpected ')'
+...r"  label_class: "user_label">);@output_buffer.safe_append='
+...                              ^
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+          ^~~
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:33: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/users/_form.html.erb:16: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/users/_form.html.erb:16: syntax error, unexpected ')'
+app/views/users/_form.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/_form.html.erb:33: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/users/_form.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/new.html.erb:5:in `_app_views_users_new_html_erb__785666553355512911_69884841715220'
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 20:13:03 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.3ms)
+  Rendered users/new.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 10.7ms)
+
+
+  
+SyntaxError (/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:16: syntax error, unexpected ')'
+...r", label_class: "user_label">);@output_buffer.safe_append='
+...                              ^
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+          ^~~
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:33: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/users/_form.html.erb:16: syntax error, unexpected ')'
+app/views/users/_form.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/_form.html.erb:33: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/users/_form.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/new.html.erb:5:in `_app_views_users_new_html_erb__785666553355512911_69884905974440'
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 20:15:20 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 12.1ms)
+
+
+  
+SyntaxError (/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:16: syntax error, unexpected ')'
+...", label: "Nom d'utilisateur">);@output_buffer.safe_append='
+...                              ^
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+          ^~~
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:33: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/mxrshy/THP/s5/j2/mxrch-i-love-forms/app/views/users/_form.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/users/_form.html.erb:16: syntax error, unexpected ')'
+app/views/users/_form.html.erb:31: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/_form.html.erb:33: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/users/_form.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+app/views/users/new.html.erb:5:in `_app_views_users_new_html_erb__785666553355512911_69884937583020'
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 20:17:10 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (204.4ms)
+  Rendered users/new.html.erb within layouts/application (206.7ms)
+Completed 200 OK in 782ms (Views: 727.0ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 20:17:31 +0100
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (203.0ms)
+  Rendered users/new.html.erb within layouts/application (205.3ms)
+Completed 200 OK in 665ms (Views: 609.4ms | ActiveRecord: 12.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-10-30 20:17:59 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IRWi0dxItct2AdHGqZZ/YxarxAtXUYQ7c3D/3q9prvU0a9PmlDYpnv9Ky5mREwcZeXRblwtCO7Mx7sSW2tGSWA==", "user"=>{"username"=>"Dark", "email"=>"tropdark@tropdark.club", "bio"=>"putetropdark"}, "commit"=>"Ajouter l'utilisateur"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Dark"], ["email", "tropdark@tropdark.club"], ["bio", "putetropdark"], ["created_at", "2018-10-30 19:18:00.155036"], ["updated_at", "2018-10-30 19:18:00.155036"]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (14.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+Redirected to http://localhost:4567/users
+Completed 302 Found in 72ms (ActiveRecord: 27.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 20:18:01 +0100
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 527ms (Views: 492.7ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-10-30 20:18:11 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 571ms (Views: 509.0ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-10-30 20:18:59 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 534ms (Views: 473.5ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-10-30 20:19:09 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 530ms (Views: 472.0ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-10-30 20:19:18 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 485ms (Views: 427.2ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 20:19:24 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 511ms (Views: 475.8ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2018-10-30 20:19:32 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (139.7ms)
+  Rendered users/edit.html.erb within layouts/application (142.1ms)
+Completed 200 OK in 621ms (Views: 563.0ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2018-10-30 20:20:07 +0100
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (139.0ms)
+  Rendered users/edit.html.erb within layouts/application (141.5ms)
+Completed 200 OK in 593ms (Views: 535.7ms | ActiveRecord: 12.9ms)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2018-10-30 20:20:20 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O0s84rhgbEdnYFhV2hQhqGOAlX5w2RoOEZBEebmVBY4uNU3V8B7wEu4rQgrikVnSDF8K4izKpYZTDn8xzC05Iw==", "user"=>{"username"=>"Omegadpute", "email"=>"omegad@yahoo.fr", "bio"=>"Je m'appelle Simon je suis né à Strasbourg"}, "commit"=>"Ajouter l'utilisateur", "id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:44
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "username" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["username", "Omegadpute"], ["updated_at", "2018-10-30 19:20:21.160093"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:44
+  [1m[35m (10.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:44
+Redirected to http://localhost:4567/users
+Completed 302 Found in 76ms (ActiveRecord: 25.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 20:20:22 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 448ms (Views: 413.3ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:28:03 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 479ms (Views: 459.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 20:28:37 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (148.6ms)
+  Rendered users/new.html.erb within layouts/application (151.2ms)
+Completed 200 OK in 619ms (Views: 566.8ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:38:00 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 603ms (Views: 581.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:38:03 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 492ms (Views: 471.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:38:09 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 452ms (Views: 433.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:40:44 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 445ms (Views: 426.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:41:13 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 449ms (Views: 429.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:41:41 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 495ms (Views: 476.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:51:50 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 519ms (Views: 499.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:52:00 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 495ms (Views: 476.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:52:09 +0100
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 498ms (Views: 479.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:52:18 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 488ms (Views: 468.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:52:35 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 493ms (Views: 473.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:52:49 +0100
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 493ms (Views: 473.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:52:58 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 491ms (Views: 472.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 20:53:05 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (40.8ms)
+Completed 200 OK in 549ms (Views: 513.6ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-10-30 20:53:45 +0100
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (210.9ms)
+  Rendered users/new.html.erb within layouts/application (214.0ms)
+Completed 200 OK in 691ms (Views: 639.0ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-10-30 20:53:52 +0100
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 598ms (Views: 574.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-30 20:54:03 +0100
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 598ms (Views: 562.2ms | ActiveRecord: 11.9ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (109.1ms)[0m  [1m[35mTRUNCATE TABLE users RESTART IDENTITY[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "eilene"], ["email", "cheryll@hotmail.com"], ["bio", "Optio odit quam ab."], ["created_at", "2018-10-30 20:05:36.107291"], ["updated_at", "2018-10-30 20:05:36.107291"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "gloria"], ["email", "silas.boyle@hotmail.com"], ["bio", "Est ut nulla reprehenderit."], ["created_at", "2018-10-30 20:05:36.127462"], ["updated_at", "2018-10-30 20:05:36.127462"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "valrie"], ["email", "sonny_cain@gmail.com"], ["bio", "Expedita ad incidunt aliquam."], ["created_at", "2018-10-30 20:05:36.137984"], ["updated_at", "2018-10-30 20:05:36.137984"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "farah"], ["email", "yvette@yahoo.com"], ["bio", "Ipsam similique vel asperiores."], ["created_at", "2018-10-30 20:05:36.149041"], ["updated_at", "2018-10-30 20:05:36.149041"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "edgardo_bartell"], ["email", "sidney@yahoo.com"], ["bio", "Ut facilis incidunt et."], ["created_at", "2018-10-30 20:05:36.160400"], ["updated_at", "2018-10-30 20:05:36.160400"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "deja"], ["email", "gayle@yahoo.com"], ["bio", "Repudiandae impedit qui ducimus."], ["created_at", "2018-10-30 20:05:36.171751"], ["updated_at", "2018-10-30 20:05:36.171751"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "reid_ullrich"], ["email", "ruben@gmail.com"], ["bio", "Commodi sapiente velit officiis."], ["created_at", "2018-10-30 20:05:36.182073"], ["updated_at", "2018-10-30 20:05:36.182073"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "sammie_gutkowski"], ["email", "myung@gmail.com"], ["bio", "Tempore nostrum et voluptatum."], ["created_at", "2018-10-30 20:05:36.194283"], ["updated_at", "2018-10-30 20:05:36.194283"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "christal.prohaska"], ["email", "lorinda_simonis@gmail.com"], ["bio", "Enim ut provident eveniet."], ["created_at", "2018-10-30 20:05:36.204211"], ["updated_at", "2018-10-30 20:05:36.204211"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "jutta"], ["email", "ozzie@hotmail.com"], ["bio", "Perspiciatis placeat distinctio non."], ["created_at", "2018-10-30 20:05:36.215409"], ["updated_at", "2018-10-30 20:05:36.215409"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+Started GET "/users" for 127.0.0.1 at 2018-10-30 21:07:09 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:22
+  Rendered users/index.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 519ms (Views: 482.6ms | ActiveRecord: 13.1ms)
+
+
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (92.2ms)[0m  [1m[35mTRUNCATE TABLE users RESTART IDENTITY[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "alexander"], ["email", "lida@hotmail.com"], ["bio", "Ad cumque aut soluta."], ["created_at", "2018-10-30 20:14:03.254161"], ["updated_at", "2018-10-30 20:14:03.254161"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (10.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "kareem_simonis"], ["email", "prudence@hotmail.com"], ["bio", "Incidunt optio accusamus eaque."], ["created_at", "2018-10-30 20:14:03.272288"], ["updated_at", "2018-10-30 20:14:03.272288"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "john"], ["email", "charolette@hotmail.com"], ["bio", "Rerum est et perspiciatis."], ["created_at", "2018-10-30 20:14:03.283173"], ["updated_at", "2018-10-30 20:14:03.283173"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "erick"], ["email", "lady@gmail.com"], ["bio", "A possimus et sint."], ["created_at", "2018-10-30 20:14:03.295190"], ["updated_at", "2018-10-30 20:14:03.295190"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (13.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "calvin"], ["email", "donald_schmeler@yahoo.com"], ["bio", "Sit aspernatur sed facilis."], ["created_at", "2018-10-30 20:14:03.316671"], ["updated_at", "2018-10-30 20:14:03.316671"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "jimmy"], ["email", "bryan@yahoo.com"], ["bio", "Velit culpa repellendus quod."], ["created_at", "2018-10-30 20:14:03.327691"], ["updated_at", "2018-10-30 20:14:03.327691"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "hellen_padberg"], ["email", "adrien_bednar@gmail.com"], ["bio", "Aut quod laborum reiciendis."], ["created_at", "2018-10-30 20:14:03.338565"], ["updated_at", "2018-10-30 20:14:03.338565"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "charley.green"], ["email", "jone@yahoo.com"], ["bio", "Pariatur quia et at."], ["created_at", "2018-10-30 20:14:03.349786"], ["updated_at", "2018-10-30 20:14:03.349786"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "deeann"], ["email", "rory@hotmail.com"], ["bio", "Ullam deserunt et reprehenderit."], ["created_at", "2018-10-30 20:14:03.360914"], ["updated_at", "2018-10-30 20:14:03.360914"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "bio", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "tarra_gerlach"], ["email", "andres@gmail.com"], ["bio", "Autem ea sunt cumque."], ["created_at", "2018-10-30 20:14:03.371944"], ["updated_at", "2018-10-30 20:14:03.371944"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
